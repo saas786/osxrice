@@ -1,4 +1,4 @@
-# The Archrice (Worthyox's dotfiles)
+# The macOSrice (Worthyox's dotfiles)
 
 This repository contains my personal dotfiles. They are stored here for convenience so that I may quickly access them on new machines or new installs. Also, others may find some of my configurations helpful in customizing their own dotfiles.
 
@@ -15,13 +15,6 @@ This repository contains my personal dotfiles. They are stored here for convenie
 	- All configs that can be in `~/.config/` are.
 	- Some environmental variables have been set in `~/.zshenv` to move configs into `~/.config/`
 
-## Usage
-
-These dotfiles are intended to go with numerous suckless programs I use:
-
-- [dwm](https://github.com/worthyox/dwm) (window manager)
-- [dwmblocks](https://github.com/worthyox/dwmblocks) (statusbar)
-- [st](https://github.com/worthyox/st) (terminal emulator)
 
 ## Install these dotfiles and all dependencies
 

@@ -1,6 +1,9 @@
 # File: .zshrc
 # Maintainer: Worthyox
 
+# Deploy randomcolors script
+/usr/local/bin/randomcolors.sh
+
 # Enable colors and change prompt:
 autoload -U colors && colors    # Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -79,9 +82,6 @@ setopt sharehistory             # Share history across terminals
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS HIST_SAVE_NO_DUPS
-
-# Deploy randomcolors script
-/usr/local/bin/randomcolors.sh
 
 # Set the starship prompt
 #eval "$(starship init zsh)"

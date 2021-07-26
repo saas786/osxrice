@@ -1,5 +1,5 @@
 #!/bin/zsh
-
+#
 # File: .zshenv
 # Maintainer: Worthyox
 
@@ -43,7 +43,7 @@ export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export LESSHISTFILE="-"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 
-# Path
+# This is the list for lf icons:
 export LF_ICONS="\
 di=:\
 fi=:\
