@@ -3,10 +3,18 @@
 # File: .zshenv
 # Maintainer: Worthyox
 
-# Adds `~/.local/bin` to $PATH
-#export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
-# Adds `/usr/local/sbin` to $PATH
+# Path
 export PATH="/usr/local/sbin:$PATH"
+
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+if [ -d "$HOME/Applications" ] ;
+  then PATH="$HOME/Applications:$PATH"
+fi
 
 unsetopt PROMPT_SP
 

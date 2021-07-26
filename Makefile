@@ -76,81 +76,8 @@ init: ## Inital deploy dotfiles on osx machine
 	$(LN) $(PWD)/.config/starship.toml $(HOME)/.config/starship.toml
 	rm -rf $(HOME)/.qutebrowser
 	$(LNDIR) $(PWD)/.config/qutebrowser $(HOME)/.qutebrowser
-
-initarch: ## Inital deploy dotfiles
-	$(LN) $(PWD)/.bash_profile $(HOME)/.bash_profile
-	$(LN) $(PWD)/.bashrc $(HOME)/.bashrc
-	$(LN) $(PWD)/.profile $(HOME)/.profile
-	$(LN) $(PWD)/.vimrc $(HOME)/.vimrc
-	$(LN) $(PWD)/.zshenv $(HOME)/.zshenv
-	rm -rf $(HOME)/.config/alacritty
-	$(LNDIR) $(PWD)/.config/alacritty $(HOME)/.config/alacritty
-	rm -rf $(HOME)/.config/dunst
-	$(LNDIR) $(PWD)/.config/dunst $(HOME)/.config/dunst
-	rm -rf $(HOME)/.config/fontconfig
-	$(LNDIR) $(PWD)/.config/fontconfig $(HOME)/.config/fontconfig
-	rm -rf $(HOME)/.config/lf
-	$(LNDIR) $(PWD)/.config/lf $(HOME)/.config/lf
-	rm -rf $(HOME)/.config/mpd
-	$(LNDIR) $(PWD)/.config/mpd $(HOME)/.config/mpd
-	rm -rf $(HOME)/.config/mpv
-	$(LNDIR) $(PWD)/.config/mpv $(HOME)/.config/mpv
-	rm -rf $(HOME)/.config/ncmpcpp
-	$(LNDIR) $(PWD)/.config/ncmpcpp $(HOME)/.config/ncmpcpp
-	rm -rf $(HOME)/.config/newsboat
-	$(LNDIR) $(PWD)/.config/newsboat $(HOME)/.config/newsboat
-	rm -rf $(HOME)/.config/openbox
-	$(LNDIR) $(PWD)/.config/openbox $(HOME)/.config/openbox
-	rm -rf $(HOME)/.config/qutebrowser
-	$(LNDIR) $(PWD)/.config/qutebrowser $(HOME)/.config/qutebrowser
-	rm -rf $(HOME)/.config/rofi
-	$(LNDIR) $(PWD)/.config/rofi $(HOME)/.config/rofi
-	rm -rf $(HOME)/.config/startpage
-	$(LNDIR) $(PWD)/.config/startpage $(HOME)/.config/startpage
-	rm -rf $(HOME)/.config/sxiv
-	$(LNDIR) $(PWD)/.config/sxiv $(HOME)/.config/sxiv
-	rm -rf $(HOME)/.config/tint2
-	$(LNDIR) $(PWD)/.config/tint2 $(HOME)/.config/tint2
-	rm -rf $(HOME)/.config/wget
-	$(LNDIR) $(PWD)/.config/wget $(HOME)/.config/wget
-	rm -rf $(HOME)/.config/X11
-	$(LNDIR) $(PWD)/.config/X11 $(HOME)/.config/X11
-	rm -rf $(HOME)/.config/xarchiver
-	$(LNDIR) $(PWD)/.config/xarchiver $(HOME)/.config/xarchiver
-	rm -rf $(HOME)/.config/zathura
-	$(LNDIR) $(PWD)/.config/zathura $(HOME)/.config/zathura
-	rm -rf $(HOME)/.config/zsh
-	$(LNDIR) $(PWD)/.config/zsh $(HOME)/.config/zsh
-	$(LN) $(PWD)/.config/mimeapps.list $(HOME)/.config/mimeapps.list
-	$(LN) $(PWD)/.config/starship.toml $(HOME)/.config/starship.toml
-	$(LN) $(PWD)/.config/user-dirs.dirs $(HOME)/.config/user-dirs.dirs
-	#$(MKDIR) $(HOME)/.local/share/
-	#rm -rf $(HOME)/.local/share/applications
-	#$(LNDIR) $(PWD)/.local/share/applications $(HOME)/.local/share/applications
-
-X: ## Setup files for xorg
-	$(MKDIR) $(HOME)/.config/X11
-	$(LN) $(PWD)/.config/X11/xinitrc $(HOME)/.config/X11/xinitrc
-	$(LN) $(PWD)/.config/X11/xresources $(HOME)/.config/X11/xresources
-	$(LN) $(PWD)/.config/X11/xserverrc $(HOME)/.config/X11/xserverrc
-	$(MKDIR) $(HOME)/.config/picom
-	$(LN) $(PWD)/.config/picom/picom.conf $(HOME)/.config/picom/picom.conf
-	$(MKDIR) $(HOME)/.config/fontconfig
-	$(LN) $(PWD)/.config/fontconfig/fonts.conf $(HOME)/.config/fontconfig/fonts.conf
-	$(MKDIR) $(HOME)/.config/dunst
-	$(LN) $(PWD)/.config/dunst/critical.png $(HOME)/.config/dunst/critical.png
-	$(LN) $(PWD)/.config/dunst/dunstrc $(HOME)/.config/dunst/dunstrc
-	$(LN) $(PWD)/.config/dunst/normal.png $(HOME)/.config/dunst/normal.png
-	$(MKDIR) $(HOME)/.config/zathura
-	$(LN) $(PWD)/.config/zathura/zathurarc $(HOME)/.config/zathura/zathurarc
-	$(MKDIR) $(HOME)/.config/qutebrowser/bookmarks
-	$(LN) $(PWD)/.config/qutebrowser/config.py $(HOME)/.config/qutebrowser/config.py
-	$(LN) $(PWD)/.config/bookmarks $(HOME)/.config/qutebrowser/bookmarks/urls
-	$(MKDIR) $(HOME)/.config/sxiv/exec
-	$(LN) $(PWD)/.config/sxiv/exec/key-handler $(HOME)/.config/sxiv/exec/key-handler
-	$(LN) $(PWD)/.config/mimeapps.list $(HOME)/.config/mimeapps.list
-	$(LN) $(PWD)/.config/starship.toml $(HOME)/.config/starship.toml
-	$(LN) $(PWD)/.config/user-dirs.dirs $(HOME)/.config/user-dirs.dirs
+	rm -rf $(HOME)/.local/bin
+	$(LNDIR) $(PWD)/.local/bin $(HOME)/.local/bin
 
 alacritty: ## Setup files for alacritty
 	$(MKDIR) $(HOME)/.config/alacritty
