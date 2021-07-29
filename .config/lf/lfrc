@@ -161,24 +161,26 @@ map <m-up> up
 map <m-down> down
 
 # Movement
+map gr cd ~/osxrice
 map gc. cd ~/.config
-map gca cd ~/.config/alacritty
 map gcl cd ~/.config/lf
+map gca cd ~/.config/alacritty
 map gcz cd ~/.config/zsh
-map gco cd ~/.config/openbox
 map gcs cd ~/.config/startpage
 
-map gp. cd ~/pictures
-map gps cd ~/pictures/screenshots
-map gpw cd ~/pictures/wallpapers
+map gp. cd ~/Pictures
+map gps cd ~/Pictures/screenshots
+map gpw cd ~/Pictures/wallpapers
 
 map gts cd ~/university
 
-map gd cd ~/documents
-map gD cd ~/downloads
+map gD cd ~/documents
+map gd. cd ~/downloads
+map ggd cd ~/downloads/gitthings
 map ge cd ~/desktop
 
-map gE cd /etc
-map gU. cd /usr
-map gUs cd /usr/share
-map gUl cd /usr/local
+map gu. cd /usr
+map ge. cd /etc
+map gus cd /usr/share
+map gul cd /usr/local
+map gub cd /usr/local/bin

@@ -31,9 +31,9 @@ ex ()
 # Use $XINITRC variable if file exists.
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
-# doas/sudo not required for some system commands
+# sudo not required for some system commands
 #for command in mount umount sv pacman updatedb su ; do
-#    alias $command="doas $command"
+#    alias $command="sudo $command"
 #done; unset command
 
 # miscellaneous
@@ -174,15 +174,5 @@ alias erem="vim ~/.reminders/remind.rem"
 alias embed="skimpdf embed "
 alias unembed="skimpdf unembed "
 
-
 # Terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
-
-# Set alias per OS
-case "$(uname -s)" in
-   Darwin)
-     # echo 'Mac OS X'
-     ;;
-   Linux)
-     ;;
-esac
