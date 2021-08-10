@@ -1,5 +1,7 @@
 #!/bin/sh
 
+alias intcalc="/Users/hadiibrahim/Desktop/interpolationCalc"
+
 # ex - archive extractor
 # usage: ex <file>
 ex ()

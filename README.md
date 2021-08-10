@@ -7,10 +7,8 @@ This repository contains my personal dotfiles. They are stored here for convenie
 	- vim (text editor)
 	- zsh (shell)
 	- lf (file manager)
-	- mpd/ncmpcpp (music)
-	- sxiv (image/gif viewer)
 	- mpv (video player)
-	- other stuff like xdg default programs, inputrc and more, etc.
+	- other stuff like inputrc and more, etc.
 - I try to minimize what's directly in `~` so:
 	- All configs that can be in `~/.config/` are.
 	- Some environmental variables have been set in `~/.zshenv` to move configs into `~/.config/`
