@@ -4,6 +4,9 @@
 # Deploy randomcolors script
 /usr/local/bin/randomcolors.sh
 
+# Set the starship prompt
+#eval "$(starship init zsh)"
+
 # Enable colors and change prompt:
 autoload -U colors && colors    # Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -83,9 +86,6 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
-
-# Set the starship prompt
-#eval "$(starship init zsh)"
 
 # Souricing zsh plugins
 source /usr/local/Cellar/zsh-autosuggestions/0.7.0/share/zsh-autosuggestions/zsh-autosuggestions.zsh

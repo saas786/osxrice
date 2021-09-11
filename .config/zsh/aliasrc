@@ -3,19 +3,11 @@
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
-# Use $XINITRC variable if file exists.
-[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
-
-# sudo not required for some system commands
-#for command in mount umount sv pacman updatedb su ; do
-#    alias $command="sudo $command"
-#done; unset command
-
 # miscellaneous
 #alias sudo='doas'
 alias \
 	c='clear' \
-	cat='bat' \
+	cat='ccat' \
 	groff='/usr/local/Cellar/groff/1.22.4_1/bin/groff'    # alias osx groff to homebrew groff
 
 # Utilities
@@ -37,7 +29,7 @@ alias \
 # brew
 alias brewsyu='brew upgrade && cd $HOME/.config/brew && brew bundle -v && brew doctor --verbose && cd && brew cu -a -f'   # update all brew pkgs
 alias brewfcrt='cd $HOME/.config/brew && brew bundle dump --describe && cd'    # create brewfile in $HOME/config/brew
-alias brewfupd='cd $HOME/.config/brew && brew bundle dump --force --describe && cd'    # update brewfile
+alias brewfsyu='cd $HOME/.config/brew && brew bundle dump --force --describe && cd'    # update brewfile
 alias cleanup='brew autoremove && brew cleanup && brew doctor --verbose'    # remove orphaned packages
 alias brewdep='brew deps --tree --installed'    # list dependencies
 
@@ -80,7 +72,7 @@ alias \
 	sdn="sudo shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-	p="doas pacman" \
+	b="brew" \
 	z="xpdf" \
 	n="newsboat"
 
@@ -93,15 +85,6 @@ alias \
 	ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
 	mocp='mocp -M "$XDG_CONFIG_HOME"/moc -O MOCDir="$XDG_CONFIG_HOME"/moc' \
 	lynx='lynx -cfg=~/.lynx/lynx.cfg -lss=~/.lynx/lynx.lss -vikeys'
-
-# get top process eating memory
-alias \
-	psmem='ps auxf | sort -nr -k 4' \
-	psmem10='ps auxf | sort -nr -k 4 | head -10'
-# get top process eating cpu
-alias \
-	pscpu='ps auxf | sort -nr -k 3' \
-	pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
 # Git
 alias \
@@ -117,7 +100,7 @@ alias \
 	status='git status' \
 	tag='git tag' \
 	newtag='git tag -a' \
-	gd="cd downloads/gitthings"
+	gd="cd $HOME/Downloads/gitthings"
 # bare git repo alias for dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 

@@ -1,10 +1,10 @@
 # General settings
 config.load_autoconfig(False)
 c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save', }
-c.downloads.location.directory = '/home/hg/Downloads'
+c.downloads.location.directory = '/Users/hadiibrahim/Downloads'
 c.tabs.show = 'always'
-c.url.default_page = 'file:///home/hg/.config/startpage/startpage.html'
-c.url.start_pages = ['file:///home/hg/.config/startpage/startpage.html']
+c.url.default_page = 'file:///Users/hadiibrahim/.config/startpage/Startpage.html'
+c.url.start_pages = ['file:///Users/hadiibrahim/.config/startpage/startpage.html']
 c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
 # c.window.hide_decoration = True
 

@@ -36,6 +36,8 @@ brew "imagemagick"
 brew "lf"
 # Mac App Store command-line interface
 brew "mas"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # RSS/Atom feed reader for text terminals
@@ -72,8 +74,12 @@ cask "adobe-acrobat-reader"
 cask "alacritty"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
+# Google Chromium, sans integration with Google
+cask "eloston-chromium"
 # Web browser
 cask "firefox"
 # 3D parametric modeler
@@ -90,15 +96,26 @@ cask "keepassxc"
 cask "keepingyouawake"
 # Office suite
 cask "libreoffice"
+# Web browser
+cask "librewolf"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Spreadsheet software
+cask "microsoft-excel"
+# Presentation software
+cask "microsoft-powerpoint"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Word processor
+cask "microsoft-word"
 # Media player based on MPlayer and mplayer2
 cask "mpv"
-cask "qtox"
+# Cloud storage client
+cask "onedrive"
 # Keyboard-driven, vim-like browser based on PyQt5
 cask "qutebrowser"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -107,17 +124,21 @@ cask "rectangle"
 cask "signal"
 # PDF reader and note-taking application
 cask "skim"
+# Customizable email client
+cask "thunderbird"
+# Virtual machines UI using QEMU
+cask "utm"
 # Virtual machine client
 cask "vmware-horizon-client"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Expenses", id: 1492055171
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
-mas "OneDrive", id: 823766827
+mas "Microsoft OneNote", id: 784801555
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723

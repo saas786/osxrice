@@ -12,9 +12,6 @@ PKGINSTALL = $(SUDO) pacman -Sy --noconfirm
 doas: ## Configure doas
 	$(SUDO) echo "permit persist keepenv $(whoami) as root" >> /etc/doas.conf
 
-sudo: # stop asking for password when using sudo
-	$(SUDO) echo "## Prevents entering password in new windows\nDefaults \!tty_tickets" >> /etc/sudoers
-
 scripts:
 	make -s $(HOME)/.scripts
 
@@ -69,8 +66,8 @@ init: ## Inital deploy dotfiles on osx machine
 	$(LNDIR) $(PWD)/.config/startpage $(HOME)/.config/startpage
 	rm -rf $(HOME)/.config/wget
 	$(LNDIR) $(PWD)/.config/wget $(HOME)/.config/wget
-	rm -rf $(HOME)/.config/X11
-	$(LNDIR) $(PWD)/.config/X11 $(HOME)/.config/X11
+	rm -rf $(HOME)/.config/brew
+	$(LNDIR) $(PWD)/.config/brew $(HOME)/.config/brew
 	rm -rf $(HOME)/.config/zathura
 	$(LNDIR) $(PWD)/.config/zathura $(HOME)/.config/zathura
 	rm -rf $(HOME)/.config/zsh
