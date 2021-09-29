@@ -18,12 +18,14 @@ fi
 
 unsetopt PROMPT_SP
 
+export BACKUP_VOLUME_PATH="/Volumes/samsung-bar/backup"
+
 # Default Apps
 export TERMINAL="alacritty"
 export COLORTERM="truecolor"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export READER="xpdf"
+export READER="zathura"
 export VIDEO="mpv"
 export IMAGE="sxiv"
 export BROWSER="firefox"

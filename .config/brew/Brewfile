@@ -1,23 +1,31 @@
-tap "astroidmail/astroid"
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-# Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
+tap "zegervdv/zathura"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Icons for the GNOME project
+brew "adwaita-icon-theme"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Fuzzy matcher that uses std{in,out} and a native GUI
 brew "choose-gui"
+# Cross-platform make
+brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Modern replacement for 'ls'
 brew "exa"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
@@ -26,8 +34,12 @@ brew "figlet"
 brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # GNU troff text-formatting system
 brew "groff"
+# Toolkit for creating graphical user interfaces
+brew "gtk+3"
 # Improved top (interactive process viewer)
 brew "htop"
 # Tools and libraries to manipulate images in many formats
@@ -48,8 +60,12 @@ brew "pandoc"
 brew "pass"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
+# Cross-platform application and UI framework
+brew "qt@5"
 # Sophisticated calendar and alarm
 brew "remind"
+# SMART hard drive monitoring
+brew "smartmontools"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
@@ -60,14 +76,14 @@ brew "trash-cli"
 brew "wget"
 # Show the current WiFi network password
 brew "wifi-password"
-# PDF viewer
-brew "xpdf"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+brew "zegervdv/zathura/zathura"
+brew "zegervdv/zathura/zathura-pdf-poppler"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # GPU-accelerated terminal emulator
@@ -78,8 +94,8 @@ cask "balenaetcher"
 cask "brave-browser"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
-# Google Chromium, sans integration with Google
-cask "eloston-chromium"
+# Digital photo manager
+cask "digikam"
 # Web browser
 cask "firefox"
 # 3D parametric modeler
@@ -100,34 +116,37 @@ cask "libreoffice"
 cask "librewolf"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
+# File system integration
+cask "macfuse"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
-# Provides updates to various Microsoft products
-cask "microsoft-auto-update"
-# Spreadsheet software
-cask "microsoft-excel"
-# Presentation software
-cask "microsoft-powerpoint"
+# Office suite
+cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# Word processor
-cask "microsoft-word"
 # Media player based on MPlayer and mplayer2
 cask "mpv"
-# Cloud storage client
-cask "onedrive"
+# Free and open-source RSS reader
+cask "netnewswire"
 # Keyboard-driven, vim-like browser based on PyQt5
 cask "qutebrowser"
+cask "qview"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
 # PDF reader and note-taking application
 cask "skim"
+# General-purpose text editor
+cask "textmate"
 # Customizable email client
 cask "thunderbird"
 # Virtual machines UI using QEMU
 cask "utm"
+# Disk encryption software focusing on security based on TrueCrypt
+cask "veracrypt"
+# Access eTextbooks
+cask "vitalsource-bookshelf"
 # Virtual machine client
 cask "vmware-horizon-client"
 # Binary releases of VS Code without MS branding/telemetry/licensing
@@ -137,8 +156,6 @@ cask "zoom"
 mas "Expenses", id: 1492055171
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft OneNote", id: 784801555
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723

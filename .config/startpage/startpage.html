@@ -28,27 +28,31 @@
                 <div class="bookmark-inner-container">
                     <a class="bookmark" href="https://www.bmo.com/main/personal" target="_blank">BMO</a>
                     <a class="bookmark" href="https://www.tangerine.ca/en/" target="_blank">Tangerine</a>
+                    <a class="bookmark" href="https://osap.gov.on.ca/OSAPSecurityWeb/public/login.xhtml" target="_blank">OSAP</a>
                 </div>
             </div>
             <div class="bookmark-set">
                 <div class="bookmark-title">School</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://osap.gov.on.ca/OSAPSecurityWeb/public/login.xhtml" target="_blank">OSAP</a>
-                    <a class="bookmark" href="https://uozone2.uottawa.ca/" target="_blank">UoZone</a>
+                    <a class="bookmark" href="https://uozone2.uottawa.ca/" target="_blank">uoZone</a>
                     <a class="bookmark" href="https://uottawa.brightspace.com/d2l/home" target="_blank">Brightspace</a>
                     <a class="bookmark" href="https://www.data-action-lab.com/mat2377-pse/" target="_blank">MCG 2377</a>
-                    <a class="bookmark" href="https://app.tophat.com/e/" target="_blank">Top Hat</a>
+                    <a class="bookmark" href="https://uottawa.sharepoint.com/_layouts/15/sharepoint.aspx" target="_blank">SharePoint</a>
                     <a class="bookmark" href="https://education.wiley.com/ngonboard/index.html#/Login" target="_blank">WileyPLUS</a>
-                    <a class="bookmark" href="https://www.google.com/drive/" target="_blank">Google Drive</a>
+                    <a class="bookmark" href="https://www.google.com/drive/" target="_blank">uOttawa Drive</a>
+                    <a class="bookmark" href="https://app.tophat.com/e/" target="_blank">Top Hat</a>
                     <a class="bookmark" href="https://eclassesconnect.contactnorth.ca/my/current" target="_blank">Contact Nord</a>
                     <a class="bookmark" href="https://www.symbolab.com/" target="_blank">Symbolab</a>
                     <a class="bookmark" href="https://biblio.uottawa.ca/en" target="_blank">Omni</a>
-                    <a class="bookmark" href="https://docs.google.com/" target="_blank">Google Docs</a>
                 </div>
             </div>
             <div class="bookmark-set">
                 <div class="bookmark-title">Favorites</div>
                 <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://lukesmith.xyz/" target="_blank">Luke Smith</a>
+                    <a class="bookmark" href="https://landchad.net/" target="_blank">LandChad.net</a>
+                    <a class="bookmark" href="https://denshi.org/" target="_blank">DenshiSite</a>
+                    <a class="bookmark" href="https://distro.tube/" target="_blank">Distrotube</a>
                     <a class="bookmark" href="https://searx.space/" target="_blank">Searx</a>
                     <a class="bookmark" href="https://search.brave.com/" target="_blank">Brave Search</a>
                     <a class="bookmark" href="https://www.startpage.com/" target="_blank">Startpage</a>
@@ -110,7 +114,7 @@
         window.onload = () => {
             let xhr = new XMLHttpRequest();
             // Request to open weather map
-            xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat=34&lon=35&units=metric&appid=9de243494c0b295cca9337e1e96b00e2');
+            xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat=45.37&lon=-75.71&units=metric&appid=9de243494c0b295cca9337e1e96b00e2');
             xhr.onload = () => {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {

@@ -173,9 +173,10 @@ map gps cd ~/Pictures/screenshots
 map gpw cd ~/Pictures/wallpapers
 
 map gts cd ~/university
+map gtu cd ~/OneDrive\ -\ University\ of\ Ottawa/bachelor-2
 
-map gD cd ~/documents
-map gd. cd ~/downloads
+map gd cd ~/documents
+map gD cd ~/downloads
 map ggd cd ~/downloads/gitthings
 map ge cd ~/desktop
 

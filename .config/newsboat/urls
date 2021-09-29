@@ -1,26 +1,63 @@
-"query:University:tags # \"Uni\"" meta
 "query:Unread:unread = \"yes\"" meta
+"query:University:tags # \"Uni\"" meta
+"query:Youtube:tags # \"yt\"" meta
 ----------------------
 ------UNIVERSITY------
 ----------------------
 https://uottawa.brightspace.com/d2l/le/news/rss/253782/course?token=aiubgd8jyzmaz6zr17454&ou=253782 "~gng2101-prod-dev-and-mgmt" "Uni"
 https://uottawa.brightspace.com/d2l/le/news/rss/243395/course?token=aiubgd8jyzmaz6zr17454&ou=243395 "~mat2322-calculus-III" "Uni"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHorQtnCoLb5TFWHJRbuz-g "Uni"
 https://uottawa.brightspace.com/d2l/le/news/rss/247504/course?token=aiubgd8jyzmaz6zr17454&ou=247504 "~mat2377-stats" "Uni"
 https://uottawa.brightspace.com/d2l/le/news/rss/243833/course?token=aiubgd8jyzmaz6zr17454&ou=243833 "~mat2384-diff-eqn" "Uni"
 https://uottawa.brightspace.com/d2l/le/news/rss/244756/course?token=aiubgd8jyzmaz6zr17454&ou=244756 "~mcg2108-mechanics-II" "Uni"
 https://uottawa.brightspace.com/d2l/le/news/rss/242731/course?token=aiubgd8jyzmaz6zr17454&ou=242731 "~mcg2360-materials-I" "Uni"
 ----------------------
-------FAVORITES-------
+--------BLOGS---------
 ----------------------
 https://lukesmith.xyz/rss.xml
+https://landchad.net/rss.xml
+https://denshi.org/rss.xml
 https://sunknudsen.com/feeds/privacy-guides.xml
 https://castel.dev/rss.xml
 ----------------------
 -------YOUTUBE--------
 ----------------------
-https://lukesmith.xyz/videos
-https://sunknudsen.com/feeds/vlog.xml
-----------------------
----------ARCH---------
-----------------------
-https://www.archlinux.org/feeds/news/ "tech"
+https://lukesmith.xyz/videos "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNwGa76xVVwdEVToRZBIUIg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWh6YtclgTAzReTASc4uSKw "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "yt"
+https://sunknudsen.com/feeds/vlog.xml "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXl4fIN0Rix5lkbwQ0UI43w "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuXgDzDJhNAwvzvc62GnYwA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvrLvII5oxSWEMEkszrxXEA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfp-lNJy4QkIGnaEE6NtDSg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsqjHFMB_JYTaEnf_vmTNqg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVYamHliCI9rw1tHR1xbkfw "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCylGUf9BvQooEFjgdNudoQg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjSEJkpGbcZhvo0lr-44X_w "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCtYg149E_wUGVmjGz-TgyNA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCg6gPGh8HU2U01vaFCAsvmQ "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBJycsmduvYEL83R_U4JriQ "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbxQcz9k0NRRuy0ukgQTDQQ "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUq3Rn72jfQ-86CaCxj7XzA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzJjUHizQfPYywqt1mSEMww "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5UAwBUum7CPN5buc-_N1Fw "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZEvYxVEr0MMUG2ZCpG8bRA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4QZ_LsYcvcq7qOsOhpAX4A "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCG7J20LhUeLl6y_Emi7OJrA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxwcmRAmBRzZMNS37dCgmHA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCO2x-p9gg9TLKneXlibGR7w "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC1myqQB33ECriZwu4jiVqCA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFzGyNKXPAglNq28qWYTDFA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCes1EvRjcKU4sY_UEavndBw "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFzGyNKXPAglNq28qWYTDFA "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCes1EvRjcKU4sY_UEavndBw "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmGSJVG3mCRXVOP4yZrU1Dw "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQTQ7WgZO_5C6wib582uIRg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRcgy6GzDeccI7dkbbBna3Q "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJetJ7nDNLlEzDLXv7KIo0w "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCY1kMZp36IQSyNx_9h4mpCg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjr2bPAyPV7t35MvcgT3W8Q "yt"
