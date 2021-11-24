@@ -25,6 +25,9 @@ updatescripts:
 pass:
 	git clone https://github.com/worthyox/pass $(HOME)/.password-store
 
+bookmarks:
+	git clone git@github.com:worthyox/bookmarks.git $(HOME)/local/share/bookmarks
+
 vim: ## Init vim
 	# requires vim
 	git clone https://github.com/worthyox/dotvim $(HOME)/.vim

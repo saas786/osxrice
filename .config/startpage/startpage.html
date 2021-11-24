@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Home</title>
     <link rel="stylesheet" href="file:///Users/hadiibrahim/.config/startpage/startpage.css">
     <link href="favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <title>Home</title>
 </head>
 <body>
     <div id="search">
@@ -24,41 +23,46 @@
         </div>
         <div class="bookmark-container">
             <div class="bookmark-set">
-                <div class="bookmark-title">Essentials</div>
+                <div class="bookmark-title">School</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://www.bmo.com/main/personal" target="_blank">BMO</a>
-                    <a class="bookmark" href="https://www.tangerine.ca/en/" target="_blank">Tangerine</a>
                     <a class="bookmark" href="https://osap.gov.on.ca/OSAPSecurityWeb/public/login.xhtml" target="_blank">OSAP</a>
+                    <a class="bookmark" href="https://uozone2.uottawa.ca/" target="_blank">uoZone</a>
+                    <a class="bookmark" href="https://uottawa.brightspace.com/d2l/home" target="_blank">Brightspace</a>
+                    <a class="bookmark" href="https://uottawa.sharepoint.com/_layouts/15/sharepoint.aspx" target="_blank">SharePoint</a>
+                    <a class="bookmark" href="https://education.wiley.com/ngonboard/index.html#/Login" target="_blank">WileyPLUS</a>
+                    <a class="bookmark" href="https://www.data-action-lab.com/mat2377-pse/" target="_blank">MCG 2377</a>
+                    <a class="bookmark" href="https://www.google.com/drive/" target="_blank">uOttava Drive</a>
+                    <a class="bookmark" href="https://www.symbolab.com/" target="_blank">Symbolab</a>
+                    <a class="bookmark" href="https://biblio.uottawa.ca/en" target="_blank">Omni</a>
+                    <a class="bookmark" href="https://app.tophat.com/e/" target="_blank">Top Hat</a>
+                    <a class="bookmark" href="https://eclassesconnect.contactnorth.ca/my/current" target="_blank">Contact Nord</a>
                 </div>
             </div>
             <div class="bookmark-set">
-                <div class="bookmark-title">School</div>
+                <div class="bookmark-title">CO-OP</div>
+                    <a class="bookmark" href="https://nav-coop-sso.uottawa.ca/CoopNav.NET/Main.aspx" target="_blank">CO-OP Navigator</a>
+                    <a class="bookmark" href="https://web.coop.uottawa.ca/IndEX/Home" target="_blank">IndEX</a>
+                    <a class="bookmark" href="https://web.coop.uottawa.ca/Workshop/Students/Default.aspx" target="_blank">Workshop Profile</a>
+                    <a class="bookmark" href="https://www2.uottawa.ca/current-students/career-experiential-learning/coop/coop-programs/mechanical-engineering" target="_blank">CO-OP Site</a>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://uozone2.uottawa.ca/" target="_blank">uoZone</a>
-                    <a class="bookmark" href="https://uottawa.brightspace.com/d2l/home" target="_blank">Brightspace</a>
-                    <a class="bookmark" href="https://www.data-action-lab.com/mat2377-pse/" target="_blank">MCG 2377</a>
-                    <a class="bookmark" href="https://uottawa.sharepoint.com/_layouts/15/sharepoint.aspx" target="_blank">SharePoint</a>
-                    <a class="bookmark" href="https://education.wiley.com/ngonboard/index.html#/Login" target="_blank">WileyPLUS</a>
-                    <a class="bookmark" href="https://www.google.com/drive/" target="_blank">uOttawa Drive</a>
-                    <a class="bookmark" href="https://app.tophat.com/e/" target="_blank">Top Hat</a>
-                    <a class="bookmark" href="https://eclassesconnect.contactnorth.ca/my/current" target="_blank">Contact Nord</a>
-                    <a class="bookmark" href="https://www.symbolab.com/" target="_blank">Symbolab</a>
-                    <a class="bookmark" href="https://biblio.uottawa.ca/en" target="_blank">Omni</a>
                 </div>
             </div>
             <div class="bookmark-set">
                 <div class="bookmark-title">Favorites</div>
                 <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://www.bmo.com/main/personal" target="_blank">BMO</a>
+                    <a class="bookmark" href="https://www.tangerine.ca/en/" target="_blank">Tangerine</a>
+                    <a class="bookmark" href="https://worthyox.github.io/" target="_blank">Steve's Blog</a>
                     <a class="bookmark" href="https://lukesmith.xyz/" target="_blank">Luke Smith</a>
                     <a class="bookmark" href="https://landchad.net/" target="_blank">LandChad.net</a>
                     <a class="bookmark" href="https://denshi.org/" target="_blank">DenshiSite</a>
-                    <a class="bookmark" href="https://distro.tube/" target="_blank">Distrotube</a>
+                    <a class="bookmark" href="https://sunknudsen.com/privacy-guides" target="_blank">Privacy Guides</a>
                     <a class="bookmark" href="https://searx.space/" target="_blank">Searx</a>
+                    <a class="bookmark" href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a>
                     <a class="bookmark" href="https://search.brave.com/" target="_blank">Brave Search</a>
                     <a class="bookmark" href="https://www.startpage.com/" target="_blank">Startpage</a>
                     <a class="bookmark" href="https://alternativeto.net/" target="_blank">Alternativeto</a>
                     <a class="bookmark" href="https://privacytools.io/" target="_blank">PrivacyTools</a>
-                    <a class="bookmark" href="https://sunknudsen.com/privacy-guides" target="_blank">Privacy Guides</a>
                     <a class="bookmark" href="https://spyware.neocities.org/articles/index.html" target="_blank">Watchdog</a>
                 </div>
             </div>
@@ -94,8 +98,8 @@
         document.getElementById("search-field").addEventListener("keydown",  event => {
             if (event.keyCode === 13) {
                 var val = document.getElementById("search-field").value;
-             window.open("https://duckduckgo.com/?q=" + val);
-             // window.open("https://searx.bar/search?q=" + val);
+             //window.open("https://duckduckgo.com/?q=" + val);
+             window.open("https://searx.bar/search?q=" + val);
             }
         });
         // Get current time and format

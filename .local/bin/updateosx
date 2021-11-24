@@ -1,6 +1,0 @@
-#! /bin/sh
-
-brew update &&
-brew upgrade &&
-cd $HOME/.config/brew && brew bundle -v && brew doctor --verbose &&
-cd && brew cu -a -f

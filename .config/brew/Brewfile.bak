@@ -135,7 +135,6 @@ cask "vmware-horizon-client"
 cask "vscodium"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Expenses", id: 1492055171
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Pages", id: 409201541
