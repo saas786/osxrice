@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # File: .bashrc
-# Maintainer: Worthyox
+# Maintainer: worthyox
 
 # Basic bash settings
 complete -d cd

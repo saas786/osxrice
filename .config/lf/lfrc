@@ -1,13 +1,5 @@
-#
-#   ██▓    ▒ ████▒ ██▀███    ▄████▄
-#  ▓██▒   ▒▓██    ▓██ ▒ ██▒ ▒██▀ ▀█
-#  ▒██░   ░▒████  ▓██ ░▄█ ▒ ▒▓█    ▄
-#  ▒██░   ░░▓█▒   ▒██▀▀█▄  ▒▒▓▓▄ ▄██
-# ▒░██████ ░▒█░   ░██▓ ▒██▒░▒ ▓███▀
-# ░░ ▒░▓    ▒ ░   ░ ▒▓ ░▒▓░░░ ░▒ ▒
-# ░░ ░ ▒    ░       ░▒ ░ ▒    ░  ▒
-#    ░ ░    ░ ░     ░░   ░  ░
-# ░    ░             ░      ░ ░
+# File: lfrc
+# Maintainer: worthyox
 #
 # Basic Settings
 set previewer ~/.config/lf/preview
@@ -172,12 +164,12 @@ map gp. cd ~/Pictures
 map gps cd ~/Pictures/screenshots
 map gpw cd ~/Pictures/wallpapers
 
-map gts cd ~/university
-map gtu cd ~/OneDrive\ -\ University\ of\ Ottawa/bachelor-2
+map gts cd ~/university/bachelor-2/semester-1
+map gtu cd ~/OneDrive\ -\ University\ of\ Ottawa/bachelor/bachelor-2
 
 map gd cd ~/documents
 map gD cd ~/downloads
-map ggd cd ~/downloads/gitthings
+map gtg cd ~/downloads/gitthings
 map ge cd ~/desktop
 
 map gu. cd /usr

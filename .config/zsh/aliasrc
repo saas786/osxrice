@@ -45,7 +45,6 @@ alias \
 # Colorize commands when possible.
 alias \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
 
 # Colorize grep output (good for log files)
 alias \
@@ -80,7 +79,6 @@ alias \
 # Adding flags
 alias \
 	df='df -h' \
-	free='free -m' \
 	vifm='./.config/vifm/scripts/vifmrun' \
 	ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
 	mocp='mocp -M "$XDG_CONFIG_HOME"/moc -O MOCDir="$XDG_CONFIG_HOME"/moc' \
@@ -89,6 +87,7 @@ alias \
 
 # Git
 alias \
+	gtg='cd $HOME/Downloads/gitthings' \
 	addup='git add -u' \
 	addall='git add .' \
 	branch='git branch' \
@@ -100,10 +99,7 @@ alias \
 	push='git push origin' \
 	status='git status' \
 	tag='git tag' \
-	newtag='git tag -a' \
-	gd="cd $HOME/Downloads/gitthings"
-# bare git repo alias for dotfiles
-alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+	newtag='git tag -a'
 
 # gpg encryption
 # verify signature for isos
@@ -146,7 +142,7 @@ alias \
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # Wget Command to Retrieve Whole Websites
-alias archive-ws='wget --mirror --convert-links --page-requisites --no-parent -P $HOME/Documents/website-archives/'
+alias wsd='wget --mirror --convert-links --page-requisites --no-parent -P $HOME/Documents/website-archives/'
 
 # Generate and deploy personal website
 alias \

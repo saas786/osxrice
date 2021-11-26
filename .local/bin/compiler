@@ -6,7 +6,7 @@
 # md files: Compiles to pdf via pandoc
 # rmd files: Compiles via R Markdown
 # c files: Compiles via whatever compiler is set to cc. Usually gcc.
-#	   Use make if Makefile exists.
+#          Use make if Makefile exists.
 # py files: runs via python command
 # go files: compiles and runs with "go run"
 # config.h files: (For suckless utils) recompiles and installs program.
@@ -56,7 +56,7 @@ compilec() {
 }
 
 case "$file" in
-    *\.ms | *\.groff) preconv "$file" |  groff -Tps -ktesp -G -ms > "$base".ps ;;
+    *\.ms | *\.groff) preconv "$file" |  groff -Tpdf -U -tepR -keGs -mspdf > "$base".pdf ;;
     *\.ps ) ps2pdf "$file" ;;
     *\.mom) pdfroff -pktes -b -wall -mom -mpdfmark "$file" > "$base".pdf ;;
     *\.present) groff -p -e -t -mm -mpresent "$file" | presentps -l | ps2pdf - > "$base".pdf ;;
@@ -75,8 +75,7 @@ case "$file" in
     *\.tcl) tclsh "$file" ;;
     *\.docx | *\.doc)
         Ifinstalled libreoffice && lowriter --convert-to pdf "$file" && exit
-        Ifinstalled pandoc && pandoccmd "$file" "$base" && exit
-        ;;
+        Ifinstalled pandoc && pandoccmd "$file" "$base" && exit ;;
     *\.dot | *\.gv) dot -Tsvg "$file" | convert svg:- "$base".eps ;;
     *\.go) go run "$file" ;;
     *\.vim*) vint "$file" ;;

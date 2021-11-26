@@ -53,7 +53,7 @@ init: ## Inital deploy dotfiles on osx machine
 	$(LN) $(PWD)/.zshenv $(HOME)/.zshenv
 	rm -rf $(HOME)/.config/alacritty
 	$(LNDIR) $(PWD)/.config/alacritty $(HOME)/.config/alacritty
-		rm -rf $(HOME)/.config/bat
+	rm -rf $(HOME)/.config/bat
 	$(LNDIR) $(PWD)/.config/bat $(HOME)/.config/bat
 	rm -rf $(HOME)/.config/lf
 	$(LNDIR) $(PWD)/.config/lf $(HOME)/.config/lf

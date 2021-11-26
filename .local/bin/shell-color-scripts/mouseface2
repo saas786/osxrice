@@ -32,14 +32,12 @@ initializeANSI()
 
 initializeANSI
 
-cat << EOF  
-  
+cat << EOF
+
 ${boldon}${redf}   ██     ██ ${reset} ${boldon}${greenf}   ██     ██ ${reset} ${boldon}${yellowf}   ██     ██ ${reset} ${boldon}${bluef}   ██     ██ ${reset} ${boldon}${purplef}   ██     ██ ${reset} ${boldon}${cyanf}   ██     ██ ${reset} 
 ${boldon}${redf}  █${whitef} ■${reset}${boldon}${redf}█   █${whitef}■${reset}${boldon}${redf} █${reset} ${boldon}${greenf}  █${whitef} ■${reset}${boldon}${greenf}█   █${whitef}■${reset}${boldon}${greenf} █${reset} ${boldon}${yellowf}  █${whitef} ■${reset}${boldon}${yellowf}█   █${whitef}■${reset}${boldon}${yellowf} █${reset} ${boldon}${bluef}  █${whitef} ■${reset}${boldon}${bluef}█   █${whitef}■${reset}${boldon}${bluef} █${reset} ${boldon}${purplef}  █${whitef} ■${reset}${boldon}${purplef}█   █${whitef}■${reset}${boldon}${purplef} █${reset} ${boldon}${cyanf}  █${whitef} ■${reset}${boldon}${cyanf}█   █${whitef}■${reset}${boldon}${cyanf} █${reset} 
 ${redf}   █ █   █ █ ${reset} ${greenf}   █ █   █ █ ${reset} ${yellowf}   █ █   █ █ ${reset} ${bluef}   █ █   █ █ ${reset} ${purplef}   █ █   █ █ ${reset} ${cyanf}   █ █   █ █ ${reset}
 ${redf}     █ █ █   ${reset} ${greenf}     █ █ █   ${reset} ${yellowf}     █ █ █   ${reset} ${bluef}     █ █ █   ${reset} ${purplef}     █ █ █   ${reset} ${cyanf}     █ █ █   ${reset}
-${redf}      =■=    ${reset} ${greenf}      =■=    ${reset} ${yellowf}      =■=    ${reset} ${bluef}      =■=    ${reset} ${purplef}      =■=    ${reset} ${cyanf}      =■=    ${reset}                                              
+${redf}      =■=    ${reset} ${greenf}      =■=    ${reset} ${yellowf}      =■=    ${reset} ${bluef}      =■=    ${reset} ${purplef}      =■=    ${reset} ${cyanf}      =■=    ${reset}
 
-
- 
 EOF

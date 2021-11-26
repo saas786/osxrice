@@ -1,6 +1,6 @@
 # File: .zshrc
-# Maintainer: Worthyox
-
+# Maintainer: worthyox
+#
 # Deploy randomcolors script
 /usr/local/bin/randomcolors.sh
 
@@ -82,10 +82,8 @@ HISTSIZE=10000000               # How many lines of history to keep in memory
 SAVEHIST=10000000               # Number of history entries to save to disk
 setopt appendhistory            # Append history to the history file (no overwriting)
 setopt sharehistory             # Share history across terminals
-setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_EXPIRE_DUPS_FIRST HIST_FIND_NO_DUPS HIST_SAVE_NO_DUPS
 setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE
-setopt HIST_FIND_NO_DUPS
-setopt HIST_SAVE_NO_DUPS
 
 # Souricing zsh plugins
 source /usr/local/Cellar/zsh-autosuggestions/0.7.0/share/zsh-autosuggestions/zsh-autosuggestions.zsh

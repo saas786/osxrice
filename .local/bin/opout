@@ -21,11 +21,9 @@ case "$1" in
 		elif [ -f "$basename".ps ]; then
 			setsid "$READER" "$basename".ps >/dev/null 2>&1 & 
 		elif [ -f "$basename".html ]; then
-	    	setsid "google-chrome-stable" "$basename".html >/dev/null 2>&1 &
+	    	setsid "librewolf" "$basename".html >/dev/null 2>&1 &
 		fi
 			;;
 	*.pdf) setsid "$READER" "$file" >/dev/null 2>&1 & ;;
-	*.html) 
-	    setsid brave "$basename".html >/dev/null 2>&1 & ;;
-	*.sent) setsid sent "$1" >/ev/null 2>&1 & ;;
-esacd
+	*.html) setsid "librewolf" "$basename".html >/dev/null 2>&1 & ;;
+esac
