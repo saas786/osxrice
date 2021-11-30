@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [About this repo](#About-this-repo)
-- [Installation](#Install-these-dotfiles-and-all-dependencies)
+- [Install these dotfiles](#Install-these-dotfiles-and-all-dependencies)
 - [My window manager configs](#Window-manager-situation)
   - [Universal Settings](#Universal-settings)
   - [Setup](#Setup)
@@ -106,11 +106,11 @@ cp ~/Library/Preferences/com.knollsoft.Rectangle.plist ~/.config/rectangle/com.k
 
 ### My terminal emulator of choice
 
-I use [alacritty](https://github.com/alacritty/alacritty) as my terminal emulator.
+I use [Alacritty](https://github.com/alacritty/alacritty) as my terminal emulator.
 
 #### Setup
 
-To configure alacritty, simply run
+To configure Alacritty, simply run
 
 ```
 make alacritty
