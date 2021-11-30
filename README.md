@@ -1,4 +1,4 @@
-# The macOSrice (Worthyox's dotfiles)
+# The macOSrice (worthyox's dotfiles)
 
 This repository contains my personal dotfiles. They are stored here for
 convenience so that I may quickly access them on new machines or new installs.
@@ -21,8 +21,8 @@ own dotfiles.
 
 ## Install these dotfiles and all dependencies
 
-This repo is managed by a makefile. Run `make` with no arguments to get a list
-of all commands that could be executed.
+This repo is managed by a makefile. Run `make` with no arguments to list
+all commands that could be executed.
 
 Use Makefile to deploy everything:
 
