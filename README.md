@@ -1,5 +1,11 @@
 # The macOSrice (worthyox's dotfiles)
 
+- [Meta](#meta)
+- [Installation](#Install-these-dotfiles-and-all-dependencies)
+- [Basics](#basics)
+
+## Meta
+
 This repository contains my personal dotfiles. They are stored here for
 convenience so that I may quickly access them on new machines or new installs.
 Also, others may find some of my configurations helpful in customizing their
@@ -30,7 +36,9 @@ Use Makefile to deploy everything:
 make init
 ```
 
-## Window manager situation
+## Basics
+
+### Window manager situation
 
 Currently, I alternate between
 [Amethyst](https://github.com/ianyh/Amethyst) and
@@ -38,7 +46,7 @@ Currently, I alternate between
 Normally, I live in a tiling window manager, but change to a "regular" window
 manager when the tiling gets in the way.
 
-### Universal settings
+#### Universal settings
 
 No matter what window manager I am using, I have these shortcuts set in System
 Preferences. These actions are not handled by both the window managers, so I
@@ -69,9 +77,9 @@ to define the following commands
 
 Both window managers use a `.plist` file for configuration.
 
-### Manual setup
+#### Manual setup
 
-#### Amethyst Setup
+##### Amethyst Setup
 
 Copy Amethyst.plist file to ~/Library/Preferences using the following command
 
@@ -79,7 +87,7 @@ Copy Amethyst.plist file to ~/Library/Preferences using the following command
 cp ~/.config/amethyst/com.amethyst.Amethyst.plist ~/Library/Preferences/com.amethyst.Amethyst.plist
 ```
 
-#### Rectangle Setup
+##### Rectangle Setup
 
 Copy Rectangle.plist file to ~/Library/Preferences using the following command
 
