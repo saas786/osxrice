@@ -6,7 +6,7 @@
   - [Window Manager](#Window-manager-situation)
     - [Universal Settings](#Universal-settings)
     - [Setup](#Setup)
-  -[Terminal](#My-terminal-of-choice)
+  - [Terminal](#My-terminal-of-choice)
     - [Setup](#Setup)
 
 ## Meta
