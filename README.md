@@ -6,7 +6,7 @@
   - [Window Manager](#Window-manager-situation)
     - [Universal Settings](#Universal-settings)
     - [Setup](#Setup)
-  - [Terminal](#My-terminal-of-choice)
+  - [Terminal Emulator](#My-terminal-emulator-of-choice)
     - [Setup](#Setup)
 
 ## Meta
@@ -99,9 +99,9 @@ and the Rectangle.plist file to ~/Library/Preferences using the following comman
 cp ~/Library/Preferences/com.knollsoft.Rectangle.plist ~/.config/rectangle/com.knollsoft.Rectangle.plist
 ```
 
-### My terminal of choice
+### My terminal emulator of choice
 
-I use [alacritty](https://github.com/alacritty/alacritty)
+I use [alacritty](https://github.com/alacritty/alacritty) as my terminal emulator.
 
 #### Setup
 
