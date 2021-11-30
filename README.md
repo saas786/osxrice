@@ -1,8 +1,8 @@
+# The macOSrice (worthyox's dotfiles)
+
 <p align="center">
     <img alt="My Desktop" src="https://github.com/worthyox/osxrice/blob/master/.screenshots/desktop.png">
 </p>
-
-# The macOSrice (worthyox's dotfiles)
 
 - [Meta](#Meta)
 - [Installation](#Install-these-dotfiles-and-all-dependencies)
