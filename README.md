@@ -1,3 +1,5 @@
+[desktop](https://github.com/worthyox/osxrice/blob/master/.screenshots/desktop.png)
+
 # The macOSrice (worthyox's dotfiles)
 
 - [Meta](#Meta)
