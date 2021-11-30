@@ -1,0 +1,23 @@
+#!/bin/bash
+
+find_all_executables() {
+	{ 
+		IFS=:; for d in $PATH; do for f in $d/*; do [ -f $f ] && [ -x $f ] && echo ${f##*/}; done; done; 
+	} | sort
+}
+
+if [[ -z "$@" ]]; then
+	echo "^run [a-zA-Z0-9_-]*$"
+elif [[ "$1" == "--hint" ]]; then
+	find_all_executables | awk '{print $1 " run " $1}'
+elif [[ "$1" == "--complete" ]]; then
+	shift
+	find_all_executables | awk '{print $1 " run " $1}'
+elif [[ "$1" == "--preview" ]]; then
+	shift
+	echo "Will run $1"
+elif [[ "$1" == "--run" ]]; then
+	shift
+	(nohup "$1" 2>/dev/null &)
+	sleep 0.01
+fi

@@ -81,6 +81,10 @@ init: ## Inital deploy dotfiles on osx machine
 	rm -rf $(HOME)/.local/bin
 	$(LNDIR) $(PWD)/.local/bin $(HOME)/.local/bin
 
+amethist: ## Setup files for alacritty
+	$(MKDIR) $(HOME)/.config/alacritty
+	$(LN) $(PWD)/.config/alacritty/alacritty.yml $(HOME)/.config/alacritty/alacritty.yml
+
 alacritty: ## Setup files for alacritty
 	$(MKDIR) $(HOME)/.config/alacritty
 	$(LN) $(PWD)/.config/alacritty/alacritty.yml $(HOME)/.config/alacritty/alacritty.yml

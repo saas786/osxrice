@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+# Creates a new note for current week. If one already exists,
+# returns its ID.
+
+HEADER="$(date +"Week %V %Y")"
+
+if [[ -z "$@" ]]; then
+	echo "^new week$"
+elif [[ "$1" == "--hint" ]]; then
+	shift
+	echo "0 new week"
+elif [[ "$1" == "--complete" ]]; then
+	shift
+	echo "0 $@"
+elif [[ "$1" == "--preview" ]]; then
+	shift
+	shift
+
+	NOTE_ID="$(notes.sh -l | grep "$HEADER" | cut -d " " -f 1 | head -1 || true)"
+
+	if [[ -z "$NOTE_ID" ]]; then
+		echo "Will create new note for $HEADER"
+	else
+		echo "Note for $HEADER already exists: $NOTE_ID"
+	fi
+elif [[ "$1" == "--run" ]] || \
+	 [[ "$1" == "--cli" ]]; then
+	shift
+	NOTE_ID="$(notes.sh -l | grep "$HEADER" | cut -d " " -f 1 | head -1 || true)"
+
+	if [[ ! -z "$NOTE_ID" ]]; then
+		echo "$NOTE_ID"
+	else
+		notes.sh -n <<-EOF
+			Subject: $HEADER
+
+			# Focus
+
+			# Schedule
+
+			## Monday
+
+			## Tuesday
+
+			## Wednesday
+
+			## Thursday
+
+			## Friday
+
+			## Saturday
+
+			## Sunday
+
+			# Notes
+		EOF
+		NOTE_ID="$(notes.sh -l | grep "$HEADER" | cut -d " " -f 1 | head -1 || true)"
+		echo "$NOTE_ID"
+	fi
+fi
+

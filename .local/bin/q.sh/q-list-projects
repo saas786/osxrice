@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+if [[ -z "$@" ]]; then
+	echo "^(all|list) projects$"
+elif [[ "$1" == "--hint" ]]; then
+	shift
+	echo "0 list projects"
+elif [[ "$1" == "--complete" ]]; then
+	shift
+	echo "0 list projects"
+elif [[ "$1" == "--preview" ]] || \
+	[[ "$1" == "--run" ]]; then
+	notes.sh -l | grep " Project: " || true
+elif [[ "$1" == "--cli" ]]; then
+	notes.sh -l | grep " Project: " || true
+else
+	echo "Unknown command: $@"
+fi

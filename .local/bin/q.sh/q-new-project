@@ -1,0 +1,73 @@
+#!/bin/bash
+#
+# Creates a new project and opens it for editing.
+
+create_project() {
+	NOTE_ID="$1"
+	PROJECT_NAME="$2"
+
+	if [[ ! -z "$NOTE_ID" ]]; then
+		notes.sh -e "$NOTE_ID"
+	else
+		notes.sh -n <<-EOF
+			Subject: Project: $PROJECT_NAME
+
+			# Description
+
+			# Areas
+
+			# Definition of done
+
+			# Timeline
+
+			Start date:
+			End date:
+
+			# Pre-mortem
+
+			# Effort
+
+			Minimum hours:
+			Target hours:
+			Maximum hours:
+
+			# Progress
+		EOF
+		NOTE_ID="$(notes.sh -l | grep "Project: $PROJECT_NAME" | cut -d " " -f 1 | head -1 || true)"
+		notes.sh -e "$NOTE_ID"
+	fi
+}
+
+if [[ -z "$@" ]]; then
+	echo "^new project *[^ ].*$"
+elif [[ "$1" == "--hint" ]]; then
+	echo "0 new project"
+elif [[ "$1" == "--complete" ]]; then
+	shift
+	PNAME="$(echo "$1" | cut -d ' ' -f3-)"
+	echo "$(echo "$PNAME" | base64) $1"
+elif [[ "$1" == "--preview" ]]; then
+	shift
+
+	PROJECT_NAME="$(echo "$1" | base64 -d)"
+	NOTE_ID="$(notes.sh -l | grep "Project: $PROJECT_NAME" | cut -d " " -f 1 | head -1 || true)"
+
+	if [[ -z "$NOTE_ID" ]]; then
+		echo "Will create new project: $PROJECT_NAME"
+	else
+		echo "Note for '$PROJECT_NAME' already exists: $NOTE_ID"
+	fi
+elif [[ "$1" == "--run" ]]; then
+	shift
+	PROJECT_NAME="$(echo "$1" | base64 -d)"
+	NOTE_ID="$(notes.sh -l | grep "Project: $PROJECT_NAME" | cut -d " " -f 1 | head -1 || true)"
+
+	create_project "$NOTE_ID" "$PROJECT_NAME"
+elif [[ "$1" == "--cli" ]]; then
+	shift
+	PROJECT_NAME="$(echo "$@" | sed 's/new project //g')"
+	NOTE_ID="$(notes.sh -l | grep "Project: $PROJECT_NAME" | cut -d " " -f 1 | head -1 || true)"
+
+	create_project "$NOTE_ID" "$PROJECT_NAME"
+fi
+

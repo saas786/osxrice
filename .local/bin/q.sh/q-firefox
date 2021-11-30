@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [[ -z "$@" ]]; then
+	echo "^f .*$"
+elif [[ "$1" == "--hint" ]]; then
+	shift
+elif [[ "$1" == "--complete" ]]; then
+	shift
+	echo "0 $1"
+elif [[ "$1" == "--preview" ]]; then
+	shift
+	URL="$(echo "$@" | cut -d ' ' -f3-)"
+	echo "Will open '$URL' in firefox"
+elif [[ "$1" == "--run" ]]; then
+	shift
+	URL="$(echo "$@" | cut -d ' ' -f3-)"
+	#(nohup firefox --new-window -P trim "$URL" 2>/dev/null &)
+	(nohup firefox --new-window "$URL" 2>/dev/null &)
+	sleep 0.01
+fi

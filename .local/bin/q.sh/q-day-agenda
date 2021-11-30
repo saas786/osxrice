@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# Shows agenda for today
+
+export PATH="~/.local/bin:$PATH"
+
+HEADER="$(date +"Week %V %Y")"
+
+get_section() {
+	SECTION_NAME="$1"
+
+	awk "{ if (\$0 ~ \"^## $1 *$\") start=1; \
+	else if (\$0 ~ \"^#\") start=0;\
+	else if (start) print \$0;}"
+}
+
+if [[ -z "$@" ]]; then
+	echo "^agenda$"
+elif [[ "$1" == "--hint" ]]; then
+	echo "0 agenda"
+elif [[ "$1" == "--complete" ]]; then
+	echo "0 agenda"
+elif [[ "$1" == "--preview" ]] || \
+	 [[ "$1" == "--cli" ]]; then
+	shift
+
+	NOTE_ID="$(notes.sh -l | grep "$HEADER" | cut -d " " -f 1 | head -1 || true)"
+	CURRENT_DAY="$(LANG=C date +"%A")"
+
+	if [[ -z "$NOTE_ID" ]]; then
+		echo "No week note for $HEADER"
+	else
+		notes.sh --export "$NOTE_ID" | get_section "$CURRENT_DAY"
+	fi
+elif [[ "$1" == "--run" ]]; then
+	shift
+	NOTE_ID="$(notes.sh -l | grep "$HEADER" | cut -d " " -f 1 | head -1 || true)"
+
+	if [[ ! -z "$NOTE_ID" ]]; then
+		(nohup alacritty -e ~/.local/bin/notes.sh -e "$NOTE_ID" 2>/dev/null &)
+        sleep 0.01
+	else
+		echo "No week note for: $HEADER"
+	fi
+
+fi
+
