@@ -3,8 +3,11 @@
 - [Meta](#Meta)
 - [Installation](#Install-these-dotfiles-and-all-dependencies)
 - [Basics](#Basics)
-  - [Window Managers](#Window-manager-situation)
-    - [Setup](#Universal-settings)
+  - [Window Manager](#Window-manager-situation)
+    - [Universal Settings](#Universal-settings)
+    - [Setup](#Setup)
+  -[Terminal](#My-terminal-of-choice)
+    - [Setup](#Setup)
 
 ## Meta
 
@@ -90,8 +93,20 @@ or you can go the manual route. Simply, copy the Amethyst.plist file to ~/Librar
 cp ~/.config/amethyst/com.amethyst.Amethyst.plist ~/Library/Preferences/com.amethyst.Amethyst.plist
 ```
 
-and copy the Rectangle.plist file to ~/Library/Preferences using the following command
+and the Rectangle.plist file to ~/Library/Preferences using the following command
 
 ```
 cp ~/Library/Preferences/com.knollsoft.Rectangle.plist ~/.config/rectangle/com.knollsoft.Rectangle.plist
+```
+
+### My terminal of choice
+
+I use [alacritty](https://github.com/alacritty/alacritty)
+
+#### Setup
+
+To configure alacritty, simply run
+
+```
+make alacritty
 ```
