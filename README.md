@@ -6,16 +6,16 @@
 
 ## Table of Contents
 
-- [Meta](#Meta)
+- [About this repo](#About-this-repo)
 - [Installation](#Install-these-dotfiles-and-all-dependencies)
-- [Basics](#Basics)
-  - [Window Manager](#Window-manager-situation)
-    - [Universal Settings](#Universal-settings)
-    - [Setup](#Setup)
-  - [Terminal Emulator](#My-terminal-emulator-of-choice)
-    - [Setup](#Setup)
+- [My window manager configs](#Window-manager-situation)
+  - [Universal Settings](#Universal-settings)
+  - [Setup](#Setup)
+- [Terminal Emulator](#My-terminal-emulator-of-choice)
+  - [Setup](#Setup)
+- [License](#License)
 
-## Meta
+## About this repo
 
 This repository contains my personal dotfiles. They are stored here for
 convenience so that I may quickly access them on new machines or new installs.
@@ -46,7 +46,6 @@ Use Makefile to deploy everything:
 ```
 make init
 ```
-## Basics
 
 ### Window manager situation
 
@@ -116,3 +115,12 @@ To configure alacritty, simply run
 ```
 make alacritty
 ```
+
+# License
+
+The files and scripts in this repository are licensed under the MIT License,
+which is a very permissive license allowing you to use, modify, copy,
+distribute, sell, give away, etc. the software. In other words, do what you
+want with it. The only requirement with the MIT License is that the license and
+copyright notice must be provided with the software.
+
