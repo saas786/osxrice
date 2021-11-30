@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="200" alt="My Desktop" src="https://github.com/worthyox/osxrice/blob/master/.screenshots/desktop.png">
+    <img alt="My Desktop" src="https://github.com/worthyox/osxrice/blob/master/.screenshots/desktop.png">
 </p>
 
 # The macOSrice (worthyox's dotfiles)
