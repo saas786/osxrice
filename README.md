@@ -2,7 +2,7 @@
 
 - [Meta](#meta)
 - [Installation](#Install-these-dotfiles-and-all-dependencies)
-- [Window Manager](#Window-manager-situation)
+- [Basics](#Window-manager-situation)
 
 ## Meta
 
