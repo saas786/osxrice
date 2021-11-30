@@ -2,7 +2,7 @@
 
 - [Meta](#meta)
 - [Installation](#Install-these-dotfiles-and-all-dependencies)
-- [Basics](#basics)
+- [Window Manager](#Window-manager-situation)
 
 ## Meta
 
@@ -36,9 +36,7 @@ Use Makefile to deploy everything:
 make init
 ```
 
-## Basics
-
-### Window manager situation
+## Window manager situation
 
 Currently, I alternate between
 [Amethyst](https://github.com/ianyh/Amethyst) and
@@ -46,7 +44,7 @@ Currently, I alternate between
 Normally, I live in a tiling window manager, but change to a "regular" window
 manager when the tiling gets in the way.
 
-#### Universal settings
+### Universal settings
 
 No matter what window manager I am using, I have these shortcuts set in System
 Preferences. These actions are not handled by both the window managers, so I
@@ -77,9 +75,9 @@ to define the following commands
 
 Both window managers use a `.plist` file for configuration.
 
-#### Manual setup
+### Manual setup
 
-##### Amethyst Setup
+#### Amethyst Setup
 
 Copy Amethyst.plist file to ~/Library/Preferences using the following command
 
@@ -87,7 +85,7 @@ Copy Amethyst.plist file to ~/Library/Preferences using the following command
 cp ~/.config/amethyst/com.amethyst.Amethyst.plist ~/Library/Preferences/com.amethyst.Amethyst.plist
 ```
 
-##### Rectangle Setup
+#### Rectangle Setup
 
 Copy Rectangle.plist file to ~/Library/Preferences using the following command
 
