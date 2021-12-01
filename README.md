@@ -59,7 +59,7 @@ manager when the tiling gets in the way.
 
 No matter what window manager I am using, I have these shortcuts set in System
 Preferences. These actions are not handled by both the window managers, so I
-set them universally. To get a setup similar to mine, go to System `Preferences
+set them universally. To get a setup similar to mine, go to `System Preferences
 -> Keyboard -> Shortcuts -> Mission Control` and set the following
 
 I use the following modifier key
