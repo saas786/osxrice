@@ -1,7 +1,7 @@
 # The macOSrice (steve's dotfiles)
 
 <p align="center">
-    <img width="600" alt="My Desktop" src="https://github.com/hi-sg/osxrice/blob/master/.screenshots/desktop.png">
+    <img width="600" alt="My Desktop" src="https://github.com/hghann/osxrice/blob/master/.screenshots/desktop.png">
 </p>
 
 ## Table of Contents
