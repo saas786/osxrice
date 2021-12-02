@@ -1,4 +1,4 @@
-# The macOSrice (worthyox's dotfiles)
+# The macOSrice (steve's dotfiles)
 
 <p align="center">
     <img width="600" alt="My Desktop" src="https://github.com/worthyox/osxrice/blob/master/.screenshots/desktop.png">
