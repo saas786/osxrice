@@ -145,9 +145,8 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias wsd='wget --mirror --convert-links --page-requisites --no-parent -P $HOME/Documents/website-archives/'
 
 # Generate and deploy personal website
-alias \
-	gw='cd ~/.websites/worthyox.github.io/ && rm -f ~/.websites/worthyox.github.io/dst/.files && ~/.websites/worthyox.github.io/bin/ssg6 src dst "Worthyoxs Blog" "https://worthyox.github.io/" && rsync -av ~/.websites/worthyox.github.io/dst/ ~/.websites/worthyox.github.io/' \
-	dw='cd ~/.websites/worthyox.github.io/ && rm -f ~/.websites/worthyox.github.io/dst/.files && ~/.websites/worthyox.github.io/bin/ssg6 src dst "Worthyoxs Blog" "https://worthyox.github.io/" && rsync -av ~/.websites/worthyox.github.io/dst/ ~/.websites/worthyox.github.io/ && git add . && git commit -m "minor edits" && git push -u origin master'
+alias gw='cd ~/.websites/hi-sg.github.io/ && rm -f ~/.websites/hi-sg.github.io/dst/.files && ~/.websites/hi-sg.github.io/bin/ssg6 src dst "Steve Blog" "https://hi-sg.github.io/" && rsync -av ~/.websites/hi-sg.github.io/dst/ ~/.websites/hi-sg.github.io/'
+alias dw='cd ~/.websites/hi-sg.github.io/ && rm -f ~/.websites/hi-sg.github.io/dst/.files && ~/.websites/hi-sg.github.io/bin/ssg6 src dst "hi-sgs Blog" "https://hi-sg.github.io/" && rsync -av ~/.websites/hi-sg.github.io/dst/ ~/.websites/hi-sg.github.io/ && git add . && git commit -m "minor edits" && git push -u origin master'
 
 #alias gw2='cd ~/.websites/save90sweb.github.io/.github.io/ && rm -f ~/.websites/save90sweb.github.io/.github.io/dst/.files && ~/.websites/save90sweb.github.io/.github.io/bin/ssg6 src dst "Save 90s Web" "https://save90sweb.github.io/" && rsync -av ~/.websites/save90sweb.github.io/.github.io/dst/ ~/.websites/save90sweb.github.io/.github.io/'
 #alias dw2='cd ~/.websites/save90sweb.github.io/.github.io/ && rm -f ~/.websites/save90sweb.github.io/.github.io/dst/.files && ~/.websites/save90sweb.github.io/.github.io/bin/ssg6 src dst "Save 90s Web" "https://save90sweb.github.io/" && rsync -av ~/.websites/save90sweb.github.io/.github.io/dst/ ~/.websites/save90sweb.github.io/.github.io/ && git add . && git commit -m "minor edits" && git push -u origin master'
