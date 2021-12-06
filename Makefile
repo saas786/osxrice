@@ -1,5 +1,12 @@
+######################################################################
+# @author      : hg
+# @file        : Makefile
+# @created     : Wed  7 Jul 11:14:15 2021
+#
 # inspired by this video
 # https://www.youtube.com/watch?v=aP8eggU2CaU
+######################################################################
+
 
 BASE = $(PWD)
 SCRIPTS = $(HOME)/.scripts

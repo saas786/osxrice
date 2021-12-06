@@ -1,7 +1,7 @@
 #!/bin/zsh
 #
 # File: .zshenv
-# Maintainer: Worthyox
+# Maintainer: hg
 
 # Path
 export PATH="/usr/local/sbin:$PATH"
