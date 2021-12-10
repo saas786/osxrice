@@ -23,21 +23,21 @@ scripts:
 	make -s $(HOME)/.local/bin/scripts
 
 $(HOME)/.local/bin/scripts:
-	@test -d $(SCRIPTS) || git clone https://github.com/worthyox/scripts $(SCRIPTS)
+	@test -d $(SCRIPTS) || git clone git@github.com:hghann/scripts.git $(SCRIPTS)
 
 updatescripts:
 	cd $(HOME)/.scripts;\
 		git pull
 
 pass:
-	git clone https://github.com/worthyox/pass $(HOME)/.password-store
+	git clone git@github.com:hghann/pass.git $(HOME)/.password-store
 
 bookmarks:
-	git clone git@github.com:worthyox/bookmarks.git $(HOME)/local/share/bookmarks
+	git clone git@github.com:hghann/bookmarks.git $(HOME)/local/share/bookmarks
 
 vim: ## Init vim
 	# requires vim
-	git clone https://github.com/worthyox/dotvim $(HOME)/.vim
+	git clone https://github.com/hghann/dotvim $(HOME)/.vim
 	cd $(HOME)/.vim && make -f $(HOME)/.vim/Makefile
 
 vimupdate: ## Updates vim config
