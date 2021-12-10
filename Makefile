@@ -26,7 +26,7 @@ $(HOME)/.local/bin/scripts:
 	@test -d $(SCRIPTS) || git clone https://github.com/worthyox/scripts $(SCRIPTS)
 
 updatescripts:
-	cd $(HOME)/.scripts:\
+	cd $(HOME)/.scripts;\
 		git pull
 
 pass:
@@ -168,6 +168,9 @@ prog_base: ## Install base programs
 		hiddenbar keepingyouawake macfuse mpv qutebrowser rectangle skim signal thunderbird \
 		veracrypt vscodium vmware-horizon-client
 
+base: ## Install base system
+	pkg_base prog_base
+
 docker: ## Docker initial setup
 	$(SUDO) pacman -S docker
 	$(SUDO) usermod -aG docker $(USER)
@@ -181,14 +184,16 @@ install: ## Install arch linux packages using pacman
 	#$(PKG) pkgfile --update
 	$(SUDO) pacman -Fy
 
-backup: ## Backup arch linux packages
+backup: ## Backup macOS packages using brew
 	$(MKDIR) $(PWD)/pkg
-	#pacman -Qnq > ${PWD}/pkg/pacmanlist
-	pacman -Qeq > $(PWD)/pkg/pacmanlist
-	pacman -Qqem > $(PWD)/pkg/aurlist
+	brew list -1 --full-name > $(PWD)/pkg/brewlist.txt
 
-update: ## Update macOS packages and save packages cache 3 generations
-	brewsyu
+update: ## Update macOS packages and save packages cache
+	brew upgrade -v;\
+		cd $(HOME)/.config/brew;\
+		brew bundle -v;\
+		brew cu -afyv;\
+		cd; brew doctor -v
 
 pip: ## Install python packages
 	pip install --user --upgrade pip
@@ -211,7 +216,7 @@ testpath: ## ECHO PATH
 
 osxinstall: base init doas sudo suspend scripts vim vm
 
-allinstall: init
+allinstall: base init
 
 allupdate: update vimupdate scriptsupdate
 
