@@ -104,10 +104,10 @@ brew "zsh-syntax-highlighting"
 cask "adobe-acrobat-reader"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
 # Electronics prototyping platform
 cask "arduino"
-# Tool to flash OS images to SD cards & USB drives
-cask "balenaetcher"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Multi-platform client-side cloud file encryption tool

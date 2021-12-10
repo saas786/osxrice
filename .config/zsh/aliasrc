@@ -148,3 +148,5 @@ alias wsd='wget --mirror --convert-links --page-requisites --no-parent -P $HOME/
 alias \
 	gw='cd ~/.websites/hghann.github.io/ && rm -f ~/.websites/hghann.github.io/dst/.files && ~/.websites/hghann.github.io/bin/ssg6 src dst "Steve Blog" "https://hghann.github.io/" && rsync -av ~/.websites/hghann.github.io/dst/ ~/.websites/hghann.github.io/' \
 	dw='cd ~/.websites/hghann.github.io/ && rm -f ~/.websites/hghann.github.io/dst/.files && ~/.websites/hghann.github.io/bin/ssg6 src dst "hghanns Blog" "https://hghann.github.io/" && rsync -av ~/.websites/hghann.github.io/dst/ ~/.websites/hghann.github.io/ && git add . && git commit -m "minor edits" && git push -u origin master'
+
+alias interp="/Users/hadiibrahim/OneDrive\ -\ University\ of\ Ottawa/bachelor/bachelor-1/semester-3/thermodynamics-I/interpolationCalc"

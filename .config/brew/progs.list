@@ -19,10 +19,14 @@ docbook
 docbook-xsl
 exa
 exiftool
+expat
+faad2
 ffmpeg
 fftw
 figlet
 flac
+fluid-synth
+fmt
 fontconfig
 fortune
 freetype
@@ -65,6 +69,7 @@ json-c
 lame
 leptonica
 lf
+libao
 libass
 libassuan
 libbluray
@@ -76,12 +81,14 @@ libffi
 libgcrypt
 libgpg-error
 libheif
+libid3tag
 libidn
 libidn2
 libksba
 liblqr
 libmpc
 libmpdclient
+libnfs
 libnghttp2
 libogg
 libomp
@@ -90,6 +97,7 @@ libpthread-stubs
 librist
 librsvg
 libsamplerate
+libshout
 libsndfile
 libsodium
 libsoxr
@@ -99,6 +107,7 @@ libtermkey
 libtiff
 libtool
 libunistring
+libupnp
 libusb
 libuv
 libvidstab
@@ -117,6 +126,7 @@ libxrender
 libyaml
 libzip
 little-cms2
+lua
 luajit-openresty
 luv
 lzo
@@ -124,6 +134,7 @@ m4
 make
 mas
 mbedtls
+mpd
 mpdecimal
 mpfr
 msgpack
@@ -153,6 +164,7 @@ pfetch
 pinentry
 pixman
 pkg-config
+portaudio
 psutils
 python@3.10
 python@3.9
@@ -203,8 +215,8 @@ zsh-syntax-highlighting
 zstd
 adobe-acrobat-reader
 alacritty
+amethyst
 arduino
-balenaetcher
 brave-browser
 cryptomator
 firefox

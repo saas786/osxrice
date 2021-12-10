@@ -7,22 +7,22 @@
 # https://www.youtube.com/watch?v=aP8eggU2CaU
 ######################################################################
 
-
 BASE = $(PWD)
 SCRIPTS = $(HOME)/.scripts
 MKDIR = mkdir -p
 LN = ln -vsf
 LNDIR = ln -vs
 SUDO = doas
-PKGINSTALL = $(SUDO) pacman -Sy --noconfirm
+PKGINSTALL = brew install
+PROGINSTALL = brew install --cask
 
 doas: ## Configure doas
 	$(SUDO) echo "permit persist keepenv $(whoami) as root" >> /etc/doas.conf
 
 scripts:
-	make -s $(HOME)/.scripts
+	make -s $(HOME)/.local/bin/scripts
 
-$(HOME)/.scripts:
+$(HOME)/.local/bin/scripts:
 	@test -d $(SCRIPTS) || git clone https://github.com/worthyox/scripts $(SCRIPTS)
 
 updatescripts:
@@ -58,39 +58,53 @@ init: ## Inital deploy dotfiles on osx machine
 	$(LN) $(PWD)/.bashrc $(HOME)/.bashrc
 	$(LN) $(PWD)/.profile $(HOME)/.profile
 	$(LN) $(PWD)/.zshenv $(HOME)/.zshenv
+	rm -rf $(HOME)/.config/zsh
+	$(LNDIR) $(PWD)/.config/zsh $(HOME)/.config/zsh
+	rm -rf $(HOME)/.config/brew
+	$(LNDIR) $(PWD)/.config/brew $(HOME)/.config/brew
 	rm -rf $(HOME)/.config/alacritty
 	$(LNDIR) $(PWD)/.config/alacritty $(HOME)/.config/alacritty
-	rm -rf $(HOME)/.config/bat
-	$(LNDIR) $(PWD)/.config/bat $(HOME)/.config/bat
 	rm -rf $(HOME)/.config/lf
 	$(LNDIR) $(PWD)/.config/lf $(HOME)/.config/lf
-	rm -rf $(HOME)/.config/mpd
-	$(LNDIR) $(PWD)/.config/mpd $(HOME)/.config/mpd
+	rm -rf $(HOME)/.config/sc-im
+	$(LNDIR) $(PWD)/.config/sc-im $(HOME)/.config/sc-im
 	rm -rf $(HOME)/.config/mpv
 	$(LNDIR) $(PWD)/.config/mpv $(HOME)/.config/mpv
+	rm -rf $(HOME)/.config/mpd
+	$(LNDIR) $(PWD)/.config/mpd $(HOME)/.config/mpd
 	rm -rf $(HOME)/.config/ncmpcpp
 	$(LNDIR) $(PWD)/.config/ncmpcpp $(HOME)/.config/ncmpcpp
 	rm -rf $(HOME)/.config/newsboat
 	$(LNDIR) $(PWD)/.config/newsboat $(HOME)/.config/newsboat
 	rm -rf $(HOME)/.config/startpage
 	$(LNDIR) $(PWD)/.config/startpage $(HOME)/.config/startpage
+	rm -rf $(HOME)/.config/htop
+	$(LNDIR) $(PWD)/.config/htop $(HOME)/.config/htop
+	rm -rf $(HOME)/.config/btop
+	$(LNDIR) $(PWD)/.config/btop $(HOME)/.config/btop
 	rm -rf $(HOME)/.config/wget
 	$(LNDIR) $(PWD)/.config/wget $(HOME)/.config/wget
-	rm -rf $(HOME)/.config/brew
-	$(LNDIR) $(PWD)/.config/brew $(HOME)/.config/brew
 	rm -rf $(HOME)/.config/zathura
 	$(LNDIR) $(PWD)/.config/zathura $(HOME)/.config/zathura
-	rm -rf $(HOME)/.config/zsh
-	$(LNDIR) $(PWD)/.config/zsh $(HOME)/.config/zsh
 	$(LN) $(PWD)/.config/starship.toml $(HOME)/.config/starship.toml
+	rm -rf $(HOME)/.config/bat
+	$(LNDIR) $(PWD)/.config/bat $(HOME)/.config/bat
+	rm -rf $(HOME)/.config/rectangle
+	$(LNDIR) $(PWD)/.config/rectangle $(HOME)/.config/rectangle
+	rm -rf $(HOME)/.config/amethyst
+	$(LNDIR) $(PWD)/.config/amethyst $(HOME)/.config/amethyst
 	rm -rf $(HOME)/.qutebrowser
 	$(LNDIR) $(PWD)/.config/qutebrowser $(HOME)/.qutebrowser
 	rm -rf $(HOME)/.local/bin
 	$(LNDIR) $(PWD)/.local/bin $(HOME)/.local/bin
+	rm -rf $(HOME)/.local/share/groff
+	$(LNDIR) $(PWD)/.local/share/groff $(HOME)/.local/share/groff
 
-amethist: ## Setup files for alacritty
-	$(MKDIR) $(HOME)/.config/alacritty
-	$(LN) $(PWD)/.config/alacritty/alacritty.yml $(HOME)/.config/alacritty/alacritty.yml
+wm: ## Setup files for window managers
+	$(MKDIR) $(HOME)/.config/amethyst
+	$(LN) $(PWD)/.config/amethyst/com.amethyst.Amethyst.plist $(HOME)/.config/amethyst/com.amethyst.Amethyst.plist
+	$(MKDIR) $(HOME)/.config/rectangle
+	$(LN) $(PWD)/.config/rectangle/com.knollsoft.Rectangle.plist $(HOME)/.config/rectangle/com.knollsoft.Rectangle.plist
 
 alacritty: ## Setup files for alacritty
 	$(MKDIR) $(HOME)/.config/alacritty
@@ -136,19 +150,23 @@ walk: ## installs plan9 find SUDO NEEDED
 	cp -f     $(TMPDIR)/walk/sor.1 $(DESTDIR)$(MANPREFIX)/man1/sor.1
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/sor.1
 
-jot: ## install jot a markdown style  preprocessor for note-taking in groff
+jot: ## install jot a markdown style preprocessor for note-taking in groff
 	$(MKDIR) $(TMPDIR)
 	git clone https://gitlab.com/rvs314/jot.git $(TMPDIR)/$<
 	rm -rf $(TMPDIR)
 
 # grap can be found here: https://www.lunabase.org/-faber/Vault/software/grap/
 
-base: ## Install base and base-devel package plus doas because sudo is bloated
-	$(PKGINSTALL) filesystem gcc-libs glibc bash coreutils file findutils gawk \
-		grep procps-ng sed tar gettext pciutils psmisc shadow util-linux bzip2 gzip \
-		xz licenses pacman systemd systemd-sysvcompat iputils iproute2 autoconf sudo \
-		automake binutils bison fakeroot flex gcc groff libtool m4 make patch pkgconf \
-		texinfo which opendoas
+pkg_base: ## Install base packages plus doas because sudo is bloat
+	$(PKGINSTALL) coreutils cmake groff grap bat fortune cowsay ffmpeg gcc fzf \
+		gnupg exa exiftool figlet htop imagemagick lf make mas neofetch neovim newsboat \
+		pandoc pass pfetch sc-im speedtest-cli smartmontools trash-cli wifi-password wget \
+		xpdf youtube-dl zsh-autosuggestions zsh-syntax-highlighting m4 make python@3.9
+
+prog_base: ## Install base programs
+	$(PROGINSTALL) keepassxc lulu alacritty amethyst librewolf cryptomator firefox mactex \
+		hiddenbar keepingyouawake macfuse mpv qutebrowser rectangle skim signal thunderbird \
+		veracrypt vscodium vmware-horizon-client
 
 docker: ## Docker initial setup
 	$(SUDO) pacman -S docker
@@ -169,8 +187,8 @@ backup: ## Backup arch linux packages
 	pacman -Qeq > $(PWD)/pkg/pacmanlist
 	pacman -Qqem > $(PWD)/pkg/aurlist
 
-update: ## Update arch linux packages and save packages cache 3 generations
-	yay -Syu
+update: ## Update macOS packages and save packages cache 3 generations
+	brewsyu
 
 pip: ## Install python packages
 	pip install --user --upgrade pip
@@ -191,11 +209,11 @@ testpath: ## ECHO PATH
 	echo $(HOME)
 	HOME=$(HOME)
 
-osxinstall: base install vim installsuckless paru yay tlp init networkmanager pacmancolors doas sudo suspend aur scripts X
+osxinstall: base init doas sudo suspend scripts vim vm
 
-allinstall: install init paru yay tlp aur
+allinstall: init
 
-allupdate: update vimupdate scriptsupdate sucklessupdate
+allupdate: update vimupdate scriptsupdate
 
 allbackup: backup
 
