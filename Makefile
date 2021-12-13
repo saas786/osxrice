@@ -130,6 +130,28 @@ ncmpcpp: ## Setup files for ncmpcpp
 	$(LN) $(PWD)/.config/ncmpcpp/bindings $(HOME)/.config/ncmpcpp/bindings
 	$(LN) $(PWD)/.config/ncmpcpp/config $(HOME)/.config/ncmpcpp/config
 
+duti: ## Setup default applications
+	$(PKGINSTALL) duti; $(PROGINSTALL) macvim;\
+	duti -s org.vim.MacVim .ms all;\
+	duti -s org.vim.MacVim .mom all;\
+	duti -s org.vim.MacVim .latex all;\
+	duti -s org.vim.MacVim .md all;\
+	duti -s org.vim.MacVim .txt all;\
+	duti -s org.vim.MacVim .sh all;\
+	duti -s org.vim.MacVim .css all;\
+	duti -s org.vim.MacVim .vim all;\
+	duti -s org.vim.MacVim .snippets all;\
+	duti -s org.vim.MacVim .xml all;\
+	duti -s org.vim.MacVim .org all;\
+	duti -s org.vim.MacVim .toml all;\
+	duti -s org.vim.MacVim .conf all;\
+	duti -s org.vim.MacVim .config all;\
+	duti -s org.vim.MacVim .json all;\
+	duti -s org.vim.MacVim .log all;\
+	duti -s org.vim.MacVim .ini all;\
+	duti -s org.vim.MacVim .yml all;\
+	duti -s org.vim.MacVim .py all
+
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 TMPDIR = $(PWD)/tmp
@@ -161,7 +183,7 @@ pkg_base: ## Install base packages plus doas because sudo is bloat
 	$(PKGINSTALL) coreutils cmake groff grap bat fortune cowsay ffmpeg gcc fzf \
 		gnupg exa exiftool figlet htop imagemagick lf make mas neofetch neovim newsboat \
 		pandoc pass pfetch sc-im speedtest-cli smartmontools trash-cli wifi-password wget \
-		xpdf youtube-dl zsh-autosuggestions zsh-syntax-highlighting m4 make python@3.9
+		xpdf youtube-dl zsh-autosuggestions zsh-syntax-highlighting m4 make python@3.9 duti
 
 prog_base: ## Install base programs
 	$(PROGINSTALL) keepassxc lulu alacritty amethyst librewolf cryptomator firefox mactex \
@@ -214,7 +236,7 @@ testpath: ## ECHO PATH
 	echo $(HOME)
 	HOME=$(HOME)
 
-osxinstall: base init doas sudo suspend scripts vim vm
+osxinstall: base init doas sudo suspend scripts vim vm duti
 
 allinstall: base init
 
