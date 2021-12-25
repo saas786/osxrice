@@ -132,6 +132,7 @@ ncmpcpp: ## Setup files for ncmpcpp
 
 duti: ## Setup default applications
 	$(PKGINSTALL) duti; $(PROGINSTALL) macvim;\
+	duti -s net.sourceforge.skim-app.skim .pdf all;\
 	duti -s org.vim.MacVim .rem all;\
 	duti -s org.vim.MacVim .ms all;\
 	duti -s org.vim.MacVim .mom all;\

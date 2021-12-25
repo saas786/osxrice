@@ -1,8 +1,23 @@
 # The macOSrice (steve's dotfiles)
 
+<!-- Header & Preview Image -->
 <p align="center">
     <img width="600" alt="My Desktop" src="https://github.com/hghann/osxrice/blob/master/.screenshots/desktop.png">
 </p>
+
+<!-- Shields -->
+<p align="center">
+  <a href="https://github.com/tallguyjenks/<REPO NAME>/blob/master/LICENSE">
+    <img src="https://img.shields.io/static/v1.svg?style=flat&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=black&colorB=green"/>
+  </a>
+  <img src="https://img.shields.io/github/commit-activity/m/tallguyjenks/<REPO NAME>">
+  <a href="https://github.com/tallguyjenks/<REPO NAME>/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/tallguyjenks/<REPO NAME>">
+  </a>
+  <img src="https://img.shields.io/github/v/release/tallguyjenks/<REPO NAME>">
+</p>
+
+<!-- Description -->
 
 ## Table of Contents
 

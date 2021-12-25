@@ -159,6 +159,7 @@ map gcl cd ~/.config/lf
 map gca cd ~/.config/alacritty
 map gcz cd ~/.config/zsh
 map gcs cd ~/.config/startpage
+map gv cd ~/.vim
 
 map gp. cd ~/Pictures
 map gps cd ~/Pictures/screenshots
@@ -175,5 +176,6 @@ map ge cd ~/desktop
 map gu. cd /usr
 map ge. cd /etc
 map gus cd /usr/share
+map gl cd ~/.local
 map gul cd /usr/local
 map gub cd /usr/local/bin

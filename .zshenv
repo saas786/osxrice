@@ -4,21 +4,22 @@
 # Maintainer: hg
 
 # Path
-export PATH="/usr/local/sbin:$PATH"
-
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+if [ -d "/usr/local/sbin" ] ;
+  then PATH="/usr/local/sbin:$PATH"
 fi
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
+fi
+if [ -d "/Applications" ] ;
+  then PATH="/Applications:$PATH"
 fi
 if [ -d "$HOME/Applications" ] ;
   then PATH="$HOME/Applications:$PATH"
 fi
 
+# Options
 unsetopt PROMPT_SP
 
-export BACKUP_VOLUME_PATH="/Volumes/samsung-bar/backup"
 
 # Default Apps
 export TERMINAL="alacritty"
@@ -28,22 +29,23 @@ export VISUAL="nvim"
 export READER="xpdf"
 export VIDEO="mpv"
 export IMAGE="sxiv"
-export BROWSER="librefox"
+export BROWSER="/Applications/LibreWolf.app/Contents/MacOS/librewolf"
 export PAGER="less"
 export CODEEDITOR="vscodium"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # export MANPAGER="nvim -c 'set ft=man' -"
+export BACKUP_VOLUME_PATH="/Volumes/samsung-bar/backup"
 
-# ~/ Clean-up:
-export XDG_CONFIG_HOME="$HOME/.config"
+# $HOME Clean-up:
 export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/inputrc"
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
-export LESSHISTFILE="-"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+export LESSHISTFILE="-"
 
 # This is the list for lf icons:
 export LF_ICONS="\

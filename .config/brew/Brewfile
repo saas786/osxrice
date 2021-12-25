@@ -3,29 +3,32 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "zegervdv/zathura"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Powerful command-line bookmark manager
+brew "buku"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Icons for the GNOME project
-brew "adwaita-icon-theme"
-# Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
-# Fuzzy matcher that uses std{in,out} and a native GUI
-brew "choose-gui"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Macro processing language
+brew "m4"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GNU compiler collection
@@ -44,14 +47,14 @@ brew "gnupg"
 brew "grap"
 # GNU troff text-formatting system
 brew "groff"
-# Toolkit for creating graphical user interfaces
-brew "gtk+3"
 # Improved top (interactive process viewer)
 brew "htop"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Terminal file manager
 brew "lf"
+# Text-based web browser
+brew "lynx"
 # Utility for directing compilation
 brew "make"
 # Mac App Store command-line interface
@@ -88,6 +91,8 @@ brew "speedtest-cli"
 brew "starship"
 # Command-line interface to the freedesktop.org trashcan
 brew "trash-cli"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # Internet file retriever
 brew "wget"
 # Show the current WiFi network password
@@ -108,10 +113,12 @@ cask "alacritty"
 cask "amethyst"
 # Electronics prototyping platform
 cask "arduino"
-# Web browser focusing on privacy
-cask "brave-browser"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
+# Google Chromium, sans integration with Google
+cask "eloston-chromium"
+# Metadata cleaner
+cask "exifcleaner"
 # Web browser
 cask "firefox"
 # 3D parametric modeler
@@ -136,19 +143,26 @@ cask "lulu"
 cask "macfuse"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Text editor
+cask "macvim"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Office suite
-cask "microsoft-office"
+# Spreadsheet software
+cask "microsoft-excel"
+# Presentation software
+cask "microsoft-powerpoint"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Word processor
+cask "microsoft-word"
 # Media player based on MPlayer and mplayer2
 cask "mpv"
 # Free and open-source RSS reader
 cask "netnewswire"
+# Cloud storage client
+cask "onedrive"
 # Keyboard-driven, vim-like browser based on PyQt5
 cask "qutebrowser"
-cask "qview"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Data science software focusing on R and Python
@@ -157,8 +171,8 @@ cask "rstudio"
 cask "signal"
 # PDF reader and note-taking application
 cask "skim"
-# General-purpose text editor
-cask "textmate"
+# Unpacks archive files
+cask "the-unarchiver"
 # Customizable email client
 cask "thunderbird"
 # Virtual machines UI using QEMU
@@ -171,11 +185,11 @@ cask "vitalsource-bookshelf"
 cask "vmware-horizon-client"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# Desktop client for WhatsApp
+cask "whatsapp"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Pages", id: 409201541
-mas "The Unarchiver", id: 425424353
-mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
