@@ -9,8 +9,10 @@
 <p align="center">
   <a href="https://github.com/hghann/osxrice/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/hghann/osxrice">
-  <img src="https://img.shields.io/github/languages/count/hghann/osxrice">
-  <img src="https://img.shields.io/github/languages/code-size/hghann/osxrice">
+  <a href="https://img.shields.io/github/languages/count/hghann/osxrice">
+      <img src="https://img.shields.io/github/languages/count/hghann/osxrice">
+  <a href="https://img.shields.io/github/languages/code-size/hghann/osxrice">
+      <img src="https://img.shields.io/github/languages/code-size/hghann/osxrice">
   <a href="https://github.com/hghann/osxrice/pulse" alt="Activity">
       <img src="https://img.shields.io/github/commit-activity/m/hghann/osxrice" /></a>
 </p>
